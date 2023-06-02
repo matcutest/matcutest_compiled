@@ -1,11 +1,11 @@
 # MatCUTEst (compiled)
 
-[![CI](https://github.com/equipez/matcutest_compiled/actions/workflows/ci.yml/badge.svg)](https://github.com/equipez/matcutest_compiled/actions/workflows/ci.yml)
+[![CI](https://github.com/matcutest/matcutest_compiled/actions/workflows/ci.yml/badge.svg)](https://github.com/matcutest/matcutest_compiled/actions/workflows/ci.yml)
 [![View MatCUTEst on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/127948-matcutest)
 
 ## What is this?
 
-This is a compiled version of [MatCUTEst](https://github.com/equipez/matcutest), which aims to facilitate the usage of [CUTEst](https://github.com/ralna/CUTEst) in MATLAB on **Linux**.
+This is a compiled version of [MatCUTEst](https://github.com/matcutest/matcutest), which aims to facilitate the usage of [CUTEst](https://github.com/ralna/CUTEst) in MATLAB on **Linux**.
 
 ## How to install?
 
@@ -15,7 +15,7 @@ Before starting, make sure that [`7-Zip`](https://en.wikipedia.org/wiki/7-Zip) i
 ### Brief version
 
 ```bash
-git clone https://github.com/equipez/matcutest_compiled.git && matlab -batch "cd matcutest_compiled; install;" && rm -rf matcutest_compiled
+git clone https://github.com/matcutest/matcutest_compiled.git && matlab -batch "cd matcutest_compiled; install;" && rm -rf matcutest_compiled
 ```
 
 ### Detailed version
@@ -35,18 +35,18 @@ If the above succeeds, then the [CUTEst](https://github.com/ralna/CUTEst) proble
 available to you via `macup`, `secup`, etc. Try `help matcutest` for more information.
 
 Success is expected if you are using [MATLAB R2020b or
-above on Ubuntu 20.04 or above](https://github.com/equipez/matcutest_compiled/actions/workflows/ci.yml).
+above on Ubuntu 20.04 or above](https://github.com/matcutest/matcutest_compiled/actions/workflows/ci.yml).
 Let me know by opening an issue if this is not the case.
 
 If this compiled version does not work, then you may try installing
-[MatCUTEst](https://github.com/equipez/matcutest) from source
-following the [README](https://github.com/equipez/matcutest/blob/main/README.md) therein.
+[MatCUTEst](https://github.com/matcutest/matcutest) from source
+following the [README](https://github.com/matcutest/matcutest/blob/main/README.md) therein.
 
 
 ## Use MatCUTEst in GitHub Actions
 
 If you want to use MatCUTEst in [GitHub Actions](https://docs.github.com/en/actions), see
-the [demo](https://github.com/equipez/matcutest_compiled/blob/main/.github/workflows/demo.yml).
+the [demo](https://github.com/matcutest/matcutest_compiled/blob/main/.github/workflows/demo.yml).
 MatCUTEst has been used intensively in the testing and development of [PRIMA](http://www.libprima.net),
 where you can find more [realistic examples](https://github.com/libprima/prima/blob/main/.github/workflows/verify_large.yml)
 of using MatCUTEst in GitHub Actions.
