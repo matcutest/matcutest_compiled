@@ -15,7 +15,7 @@ This is a compiled version of [MatCUTEst](https://github.com/matcutest/matcutest
 ### Brief version (this is for YOU!)
 
 ```bash
-git clone https://github.com/matcutest/matcutest_compiled.git && matlab -batch "cd matcutest_compiled; install;" && rm -rf matcutest_compiled
+rm -rf matcutest_compiled && git clone https://github.com/matcutest/matcutest_compiled.git && matlab -batch "cd matcutest_compiled; install;" && rm -rf matcutest_compiled
 ```
 
 ### Detailed version (this is for those who are really curious what is going on)
