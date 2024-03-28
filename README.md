@@ -20,7 +20,7 @@ rm -rf matcutest_compiled && git clone https://github.com/matcutest/matcutest_co
 
 ### Detailed version (this is for those who are really curious what is going on)
 
-1. Clone this repository. You should then get a folder containing this README file  the
+1. Clone this repository. You should then get a folder containing this README file and the
 [`install.m`](install.m) file.
 
 2. In the command window of MATLAB, change your directory to the above-mentioned folder, and execute
