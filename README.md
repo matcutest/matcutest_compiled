@@ -9,16 +9,16 @@ This is a compiled version of [MatCUTEst](https://github.com/matcutest/matcutest
 
 ## How to install?
 
-Before starting, make sure that [`7-Zip`](https://en.wikipedia.org/wiki/7-Zip) is installed
+**Before starting, make sure that [`7-Zip`](https://en.wikipedia.org/wiki/7-Zip) is installed**
 (e.g., try `type 7z || sudo apt install p7zip-full` on Ubuntu).
 
-### Brief version
+### Brief version (this is for YOU!)
 
 ```bash
 git clone https://github.com/matcutest/matcutest_compiled.git && matlab -batch "cd matcutest_compiled; install;" && rm -rf matcutest_compiled
 ```
 
-### Detailed version
+### Detailed version (this is for those who are really curious what is going on)
 
 1. Clone this repository. You should then get a folder containing this README file  the
 [`install.m`](install.m) file.
