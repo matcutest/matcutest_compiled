@@ -18,7 +18,7 @@ This is a compiled version of [MatCUTEst](https://github.com/matcutest/matcutest
 rm -rf matcutest_compiled && git clone https://github.com/matcutest/matcutest_compiled.git && matlab -batch "cd matcutest_compiled; install;" && rm -rf matcutest_compiled
 ```
 
-### Detailed version (this is for those who are really curious what is going on)
+### Detailed version (this is for those who are really curious about what is going on)
 
 1. Clone this repository. You should then get a folder containing this README file and the
 [`install.m`](install.m) file.
