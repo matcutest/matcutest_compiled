@@ -133,7 +133,7 @@ jobs:
             copyfile('./testdata/*problems.txt', fullfile(root_dir, 'matcutest.compiled'));
 
       - name: Store artifacts
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: ${{ matrix.os }}.${{ matrix.matlab }}.${{ matrix.list }}
           path: |
