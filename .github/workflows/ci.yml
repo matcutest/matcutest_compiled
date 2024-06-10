@@ -60,8 +60,8 @@ jobs:
       - name: Install 7z
         run: sudo apt install p7zip-full
 
-      - name: Link gfortran for MATLAB on Linux
-        if: startsWith(matrix.os, 'ubuntu')
+      - name: Decide gfortran version for MATLAB on Linux                                                
+        if: startsWith(matrix.os, 'ubuntu')       
         run: |
           GFVER=${{ env.GFORTRAN_VERSION }}
           if [[ "${{ matrix.os }}" = "ubuntu-20.04" ]] ; then
@@ -70,8 +70,17 @@ jobs:
           if [[ "${{ matrix.matlab }}" = "R2020a" || "${{ matrix.matlab }}" = "R2020b" \
              || "${{ matrix.matlab }}" = "R2021a" || "${{ matrix.matlab }}" = "R2021b" ]] ; then
               GFVER=9
-          fi
-          bash .github/scripts/link_gfortran "$GFVER"
+          fi                                                                                        
+          echo "GFVER=$GFVER" >> $GITHUB_ENV                                                                                                                                                               
+      - name: Set up gfortran on Linux                                                                   
+        if: startsWith(matrix.os, 'ubuntu')                                                              
+        uses: fortran-lang/setup-fortran@main                                                            
+        with:                                                                                            
+          compiler: gcc                                                                                  
+          version: ${{ env.GFVER }}                                                                      
+      - name: Check gfortran version on Linux                                                            
+        if: startsWith(matrix.os, 'ubuntu')                                                              
+        run: which gfortran && gfortran --version      
 
       - name: Install epstopdf and ghostscript
         if: startsWith(matrix.os, 'ubuntu')
