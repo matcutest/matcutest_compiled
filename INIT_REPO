@@ -10,7 +10,7 @@ GIT="github.com"
 REPO="matcutest/matcutest_compiled"  # Repo name, preceded by the organization name.
 REPO_URL=git@"$GIT":"$REPO".git
 SCRIPTS_REPO="equipez/github_actions_scripts"
-SCRIPTS_URL=git@"$GIT":"$SCRIPTS_REPO".git
+SCRIPTS_URL=https://"$GIT"/"$SCRIPTS_REPO"
 
 # Delete the existing $REPO
 printf "Checking whether %s exists ...\n" "$REPO_URL"
