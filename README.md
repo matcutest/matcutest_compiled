@@ -5,7 +5,7 @@
 
 ## What is this?
 
-This is a compiled version of [MatCUTEst](https://github.com/matcutest/matcutest), which aims to facilitate the usage of [CUTEst](https://github.com/ralna/CUTEst) in MATLAB on **Linux**.
+This is a compiled version of [MatCUTEst](https://github.com/matcutest/matcutest), which aims to facilitate the use of [CUTEst](https://github.com/ralna/CUTEst) in MATLAB on Linux.
 
 ## How to install?
 
@@ -23,7 +23,7 @@ rm -rf matcutest_compiled && git clone https://github.com/matcutest/matcutest_co
 1. Clone this repository. You should then get a folder containing this README file and the
 [`install.m`](install.m) file.
 
-2. In the command window of MATLAB, change your directory to the above-mentioned folder, and execute
+2. In the command window of MATLAB, change your directory to the folder mentioned above, and execute
 
 ```matlab
 install
@@ -35,7 +35,7 @@ If the above succeeds, then the [CUTEst](https://github.com/ralna/CUTEst) proble
 available to you via `macup`, `secup`, etc. Try `help matcutest` for more information.
 
 Success is expected if you are using [MATLAB R2020b or
-above on Ubuntu 20.04 or above](https://github.com/matcutest/matcutest_compiled/actions/workflows/ci.yml).
+above on Ubuntu 22.04 or above](https://github.com/matcutest/matcutest_compiled/actions/workflows/ci.yml).
 Let me know by opening an issue if this is not the case.
 
 If this compiled version does not work, then you may try installing
