@@ -134,14 +134,11 @@ jobs:
 
             cd(fullfile(root_dir, 'prima', 'matlab', 'tests'));
             opt.blacklist = {};
-            % In the following, we profile against 'classical'; do not use 'norma' (the default), which
-            % does not work with MATLAB R2025a due to a bug of MATLAB.
-            % See https://github.com/libprima/prima/commit/193f3424ddd8d50529af27eb6c7d662744bbeee2
-            profile('uobyqa', 'seq', 'classical', opt);
-            profile('newuoa', 'seq', 'classical', opt);
-            profile('bobyqa', 'seq', 'b', 'classical', opt);
-            profile('lincoa', 'seq', 'l', 'classical', opt);
-            profile('cobyla', 'seq', 'n', 'classical', opt);
+            profile('uobyqa', 'seq', 'u', opt);
+            profile('newuoa', 'seq', 'u', opt);
+            profile('bobyqa', 'seq', 'b', opt);
+            profile('lincoa', 'seq', 'l', opt);
+            profile('cobyla', 'seq', 'n', opt);
             mkdir(fullfile(root_dir, 'matcutest.compiled'));
             copyfile('./testdata/*summary*.pdf', fullfile(root_dir, 'matcutest.compiled'));
             copyfile('./testdata/*problems.txt', fullfile(root_dir, 'matcutest.compiled'));
