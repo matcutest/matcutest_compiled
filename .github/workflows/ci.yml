@@ -64,7 +64,7 @@ jobs:
       - name: Decide gfortran version for MATLAB on Linux
         if: startsWith(matrix.os, 'ubuntu')
         run: |
-          GFVER=${{ env.GFORTRAN_VERSION }}
+          GFVER=latest
           if [[ "${{ matrix.os }}" = "ubuntu-22.04" ]] ; then
               GFVER=13
           fi
