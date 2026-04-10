@@ -103,7 +103,7 @@ jobs:
           sed -i "s|$PKG_DFT|$PKG|g" ./install.m
 
       - name: Install and test MatCUTEst
-        uses: matlab-actions/run-command@v3.0.0
+        uses: matlab-actions/run-command@v3.0.1
         with:
           command: |
             ver;
